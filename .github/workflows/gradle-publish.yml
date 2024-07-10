@@ -28,4 +28,4 @@ jobs:
         run: ./gradlew publish
         env:
           MAVEN_USERNAME: ${{ secrets.MAVEN_USERNAME }}
-          MAVEN_PASSWORD: ${{ secrets.MAVEN_PASSWORD }}
+          MAVEN_SECRET: ${{ secrets.MAVEN_SECRET }}

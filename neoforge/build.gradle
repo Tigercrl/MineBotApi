@@ -68,7 +68,7 @@ components.java {
 
 publishing {
     publications {
-        mavenForge(MavenPublication) {
+        mavenNeoForge(MavenPublication) {
             artifactId = rootProject.archives_base_name + "-" + project.name
             from components.java
         }
@@ -77,8 +77,8 @@ publishing {
     // See https://docs.gradle.org/current/userguide/publishing_maven.html for information on how to set up publishing.
     repositories {
         maven {
-            name "top.tigercrl"
-            url "https://maven.tigercrl.top/releases"
+            name "tigerMavenSnapshots"
+            url "https://maven.tigercrl.top/snapshots"
             credentials {
                 username = System.getenv("MAVEN_USERNAME")
                 password = System.getenv("MAVEN_SECRET")
